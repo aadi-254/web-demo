@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Luxe Beauty Salon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-spa"></i>
+                <span>Luxe Beauty</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html" class="active">Book Now</a></li>
+            </ul>
+            <a href="booking.html" class="book-btn">Book Appointment</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <p class="subtitle fade-in">Book Now</p>
+            <h1 class="fade-in">Schedule Your Appointment</h1>
+            <p class="description fade-in">Fill out the form below and we'll confirm your booking shortly</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info-section fade-in-section">
+        <div class="container">
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>(555) 123-4567</p>
+                    <a href="tel:5551234567">Click to Call</a>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Opening Hours</h3>
+                    <p>Mon-Sat: 9AM - 7PM<br>Sunday: 10AM - 5PM</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>456 Beauty Avenue<br>Style City, SC 67890</p>
+                    <a href="#">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form-section fade-in-section">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-form-container">
+                    <h2>Book Your Appointment</h2>
+                    <p class="form-subtitle">We'll confirm your booking within 24 hours</p>
+                    
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Select Service *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Choose a service...</option>
+                                <optgroup label="Hair Services">
+                                    <option value="womens-haircut">Women's Haircut - $65</option>
+                                    <option value="mens-haircut">Men's Haircut - $45</option>
+                                    <option value="hair-color">Full Hair Color - $150</option>
+                                    <option value="highlights-partial">Highlights (Partial) - $120</option>
+                                    <option value="highlights-full">Highlights (Full) - $180</option>
+                                    <option value="balayage">Balayage - $200</option>
+                                    <option value="hair-treatment">Hair Treatment - $85</option>
+                                    <option value="keratin">Keratin Treatment - $250</option>
+                                </optgroup>
+                                <optgroup label="Nail Care">
+                                    <option value="classic-mani">Classic Manicure - $35</option>
+                                    <option value="gel-mani">Gel Manicure - $55</option>
+                                    <option value="basic-pedi">Basic Pedicure - $45</option>
+                                    <option value="luxury-pedi">Luxury Pedicure - $65</option>
+                                    <option value="gel-pedi">Gel Pedicure - $70</option>
+                                </optgroup>
+                                <optgroup label="Facial & Skin">
+                                    <option value="classic-facial">Classic Facial - $80</option>
+                                    <option value="anti-aging">Anti-Aging Facial - $120</option>
+                                    <option value="hydration">Hydration Facial - $95</option>
+                                    <option value="acne-treatment">Acne Treatment - $90</option>
+                                </optgroup>
+                                <optgroup label="Makeup">
+                                    <option value="event-makeup">Special Event Makeup - $85</option>
+                                    <option value="bridal-makeup">Bridal Makeup - $250</option>
+                                    <option value="makeup-lesson">Makeup Lesson - $120</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select time...</option>
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="09:30">9:30 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="10:30">10:30 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="13:30">1:30 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="14:30">2:30 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="15:30">3:30 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                    <option value="16:30">4:30 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="17:30">5:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="stylist">Preferred Stylist (Optional)</label>
+                            <select id="stylist" name="stylist">
+                                <option value="">No preference</option>
+                                <option value="sophia">Sophia Martinez</option>
+                                <option value="emma">Emma Johnson</option>
+                                <option value="olivia">Olivia Davis</option>
+                                <option value="ava">Ava Wilson</option>
+                                <option value="isabella">Isabella Brown</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Special Requests or Notes</label>
+                            <textarea id="notes" name="notes" rows="4" placeholder="Any special requests, allergies, or information we should know..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">I'd like to receive beauty tips and special offers via email</label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the cancellation policy (24 hours notice required) *</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">Confirm Booking</button>
+                        
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+
+                <div class="booking-sidebar">
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-info-circle"></i> Booking Information</h3>
+                        <ul class="info-list">
+                            <li><i class="fas fa-check"></i> Booking confirmation within 24 hours</li>
+                            <li><i class="fas fa-check"></i> Free consultation included</li>
+                            <li><i class="fas fa-check"></i> 24-hour cancellation policy</li>
+                            <li><i class="fas fa-check"></i> Complimentary refreshments</li>
+                            <li><i class="fas fa-check"></i> Free parking available</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card highlight">
+                        <h3><i class="fas fa-gift"></i> First Time Visit?</h3>
+                        <p>Get 15% off your first service! Mention this offer when you book.</p>
+                        <div class="promo-code">FIRST15</div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-star"></i> Why Choose Us?</h3>
+                        <ul class="why-list">
+                            <li>✨ Expert stylists & beauticians</li>
+                            <li>✨ Premium products only</li>
+                            <li>✨ Luxury salon environment</li>
+                            <li>✨ Personalized consultations</li>
+                            <li>✨ Flexible appointment times</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section fade-in-section">
+        <div class="container-full">
+            <div class="map-placeholder">
+                <!-- Replace with actual Google Maps embed -->
+                <div class="map-content">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Find Us on the Map</h3>
+                    <p>456 Beauty Avenue, Style City, SC 67890</p>
+                    <p class="small-text">Replace this section with Google Maps iframe embed code:</p>
+                    <code>&lt;iframe src="your-google-maps-url"&gt;&lt;/iframe&gt;</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> How do I cancel or reschedule?</h4>
+                    <p>Please call us at least 24 hours before your appointment to cancel or reschedule without charge.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> What payment methods do you accept?</h4>
+                    <p>We accept cash, credit cards (Visa, MasterCard, Amex), and digital payments (Apple Pay, Google Pay).</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> Do you offer gift certificates?</h4>
+                    <p>Yes! Gift certificates are available for any amount and make the perfect gift for any occasion.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> Should I arrive early for my appointment?</h4>
+                    <p>We recommend arriving 10 minutes early, especially for first-time visits, to complete any necessary paperwork.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-spa"></i> Luxe Beauty</h3>
+                    <p>Your destination for premium beauty services and exceptional care.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Hair Services</a></li>
+                        <li><a href="services.html">Nail Care</a></li>
+                        <li><a href="services.html">Facials</a></li>
+                        <li><a href="services.html">Makeup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 456 Beauty Avenue<br>Style City, SC 67890</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> hello@luxebeauty.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luxe Beauty Salon. All rights reserved. | Designed with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

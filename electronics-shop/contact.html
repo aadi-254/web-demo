@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechZone Electronics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                <span>TechZone</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in">Contact Us</h1>
+            <p class="fade-in">Visit our store or get in touch with us</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-cards fade-in-section">
+        <div class="container">
+            <div class="info-cards-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Our Store</h3>
+                    <p>789 Tech Street<br>Silicon Valley, CA 94000</p>
+                    <a href="#" class="link-btn">Get Directions <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+1 (234) 567-890<br>Mon-Sat: 9AM - 8PM</p>
+                    <a href="tel:+1234567890" class="link-btn">Call Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@techzone.com<br>support@techzone.com</p>
+                    <a href="mailto:info@techzone.com" class="link-btn">Send Email <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Store Hours</h3>
+                    <p>Mon-Sat: 9:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section fade-in-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <p class="form-subtitle">Have a question? We'd love to hear from you</p>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject...</option>
+                                    <option value="product-inquiry">Product Inquiry</option>
+                                    <option value="order-status">Order Status</option>
+                                    <option value="technical-support">Technical Support</option>
+                                    <option value="warranty">Warranty Claim</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                        
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+
+                <div class="contact-sidebar">
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-question-circle"></i> Need Quick Help?</h3>
+                        <ul class="help-list">
+                            <li>
+                                <strong>Product Questions:</strong><br>
+                                Browse our FAQ section or call us directly
+                            </li>
+                            <li>
+                                <strong>Order Tracking:</strong><br>
+                                Check your order status online 24/7
+                            </li>
+                            <li>
+                                <strong>Technical Support:</strong><br>
+                                Our experts are ready to assist you
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card highlight">
+                        <h3><i class="fas fa-tag"></i> Special Offers</h3>
+                        <p>Sign up for our newsletter and get 10% off your first purchase!</p>
+                        <button class="btn btn-secondary">Subscribe Now</button>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                        <div class="social-links-large">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section fade-in-section">
+        <div class="container-full">
+            <div class="map-placeholder">
+                <!-- Replace with actual Google Maps embed -->
+                <div class="map-content">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Find Us on the Map</h3>
+                    <p>789 Tech Street, Silicon Valley, CA 94000</p>
+                    <p class="small-text">Replace this with Google Maps iframe:</p>
+                    <code>&lt;iframe src="your-google-maps-url" width="100%" height="450"&gt;&lt;/iframe&gt;</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose fade-in-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Shop at TechZone?</h2>
+                <p>Your satisfaction is our priority</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Authentic Products</h3>
+                    <p>100% genuine products from authorized manufacturers</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Warranty Protection</h3>
+                    <p>Comprehensive warranty coverage on all products</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick and secure delivery to your doorstep</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>Knowledgeable staff ready to assist you</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive pricing with regular discounts</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>Easy Returns</h3>
+                    <p>Hassle-free 30-day return policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-bolt"></i> TechZone</h3>
+                    <p>Your trusted destination for premium electronics and technology products.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html">Smartphones</a></li>
+                        <li><a href="products.html">Laptops</a></li>
+                        <li><a href="products.html">Accessories</a></li>
+                        <li><a href="products.html">Smart TV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 789 Tech Street<br>Silicon Valley, CA 94000</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-envelope"></i> info@techzone.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechZone Electronics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

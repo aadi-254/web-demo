@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshMart - Your Local Grocery Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shopping-basket"></i>
+                <span>FreshMart</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content-wrapper">
+            <!-- Replace with actual banner image -->
+            <div class="hero-image-placeholder">
+                <p>🥬 Replace with Banner Image (Fresh Produce)</p>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content fade-in">
+                <span class="hero-tag">Fresh Daily</span>
+                <h1>Fresh Groceries<br>Delivered to You</h1>
+                <p>Quality produce, dairy, and essentials at your doorstep</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">Shop Now</a>
+                    <a href="#offers" class="btn btn-outline">Today's Offers</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Banner -->
+    <section class="features-banner fade-in-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-box">
+                    <i class="fas fa-leaf"></i>
+                    <h3>100% Fresh</h3>
+                    <p>Farm-fresh produce delivered daily</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-truck"></i>
+                    <h3>Free Delivery</h3>
+                    <p>On orders above $50</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-tag"></i>
+                    <h3>Best Prices</h3>
+                    <p>Quality products at great prices</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-clock"></i>
+                    <h3>Open Daily</h3>
+                    <p>7 AM - 10 PM every day</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Offers Section -->
+    <section id="offers" class="daily-offers fade-in-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Today's Special Offers</h2>
+                <p>Fresh deals updated daily</p>
+            </div>
+
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">30% OFF</div>
+                    <div class="offer-image">
+                        <!-- Replace with actual product image -->
+                        <div class="image-placeholder">
+                            <i class="fas fa-apple-alt"></i>
+                            <p>Fresh Apples</p>
+                        </div>
+                    </div>
+                    <div class="offer-info">
+                        <h3>Fresh Red Apples</h3>
+                        <p class="offer-description">Premium quality, hand-picked</p>
+                        <div class="price-row">
+                            <span class="old-price">$5.99/kg</span>
+                            <span class="new-price">$4.19/kg</span>
+                        </div>
+                        <button class="btn btn-add">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-badge">25% OFF</div>
+                    <div class="offer-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cheese"></i>
+                            <p>Fresh Dairy</p>
+                        </div>
+                    </div>
+                    <div class="offer-info">
+                        <h3>Organic Milk</h3>
+                        <p class="offer-description">Farm-fresh, pasteurized</p>
+                        <div class="price-row">
+                            <span class="old-price">$3.99/L</span>
+                            <span class="new-price">$2.99/L</span>
+                        </div>
+                        <button class="btn btn-add">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-badge">20% OFF</div>
+                    <div class="offer-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-bread-slice"></i>
+                            <p>Fresh Bread</p>
+                        </div>
+                    </div>
+                    <div class="offer-info">
+                        <h3>Whole Wheat Bread</h3>
+                        <p class="offer-description">Freshly baked daily</p>
+                        <div class="price-row">
+                            <span class="old-price">$2.49</span>
+                            <span class="new-price">$1.99</span>
+                        </div>
+                        <button class="btn btn-add">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-badge">15% OFF</div>
+                    <div class="offer-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-carrot"></i>
+                            <p>Fresh Vegetables</p>
+                        </div>
+                    </div>
+                    <div class="offer-info">
+                        <h3>Mixed Vegetables</h3>
+                        <p class="offer-description">Seasonal fresh veggies</p>
+                        <div class="price-row">
+                            <span class="old-price">$4.99/kg</span>
+                            <span class="new-price">$4.24/kg</span>
+                        </div>
+                        <button class="btn btn-add">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories fade-in-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop by Category</h2>
+                <p>Browse our fresh collection</p>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <!-- Replace with actual category image -->
+                        <div class="image-placeholder">
+                            <i class="fas fa-apple-alt"></i>
+                            <p>Fruits & Vegetables</p>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Fruits & Vegetables</h3>
+                        <p>Fresh daily produce</p>
+                        <a href="products.html#fruits" class="category-link">Shop Now →</a>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cheese"></i>
+                            <p>Dairy Products</p>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Dairy Products</h3>
+                        <p>Milk, cheese, yogurt</p>
+                        <a href="products.html#dairy" class="category-link">Shop Now →</a>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-bread-slice"></i>
+                            <p>Bakery Items</p>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Bakery Items</h3>
+                        <p>Fresh bread & pastries</p>
+                        <a href="products.html#bakery" class="category-link">Shop Now →</a>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-drumstick-bite"></i>
+                            <p>Meat & Seafood</p>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Meat & Seafood</h3>
+                        <p>Quality cuts & fresh fish</p>
+                        <a href="products.html#meat" class="category-link">Shop Now →</a>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-box"></i>
+                            <p>Pantry Essentials</p>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Pantry Essentials</h3>
+                        <p>Rice, flour, oil & more</p>
+                        <a href="products.html#pantry" class="category-link">Shop Now →</a>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-ice-cream"></i>
+                            <p>Frozen Foods</p>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Frozen Foods</h3>
+                        <p>Ice cream, frozen veggies</p>
+                        <a href="products.html#frozen" class="category-link">Shop Now →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose fade-in-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Shop at FreshMart?</h2>
+                <p>Your trusted neighborhood grocery store</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Organic Options</h3>
+                    <p>Wide selection of organic and natural products</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Friendly Service</h3>
+                    <p>Personal attention and helpful staff</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Value for Money</h3>
+                    <p>Best prices in the neighborhood</p>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Community Focus</h3>
+                    <p>Supporting local farmers and suppliers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section fade-in-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Visit Our Store Today!</h2>
+                <p>Experience fresh quality and friendly service</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get Directions</a>
+                    <a href="tel:+1234567890" class="btn btn-outline-white">Call Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shopping-basket"></i> FreshMart</h3>
+                    <p>Your trusted source for fresh groceries and quality products since 1995.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html#fruits">Fruits & Vegetables</a></li>
+                        <li><a href="products.html#dairy">Dairy Products</a></li>
+                        <li><a href="products.html#bakery">Bakery Items</a></li>
+                        <li><a href="products.html#meat">Meat & Seafood</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Store Hours</h4>
+                    <ul class="store-hours">
+                        <li><strong>Monday - Saturday:</strong><br>7:00 AM - 10:00 PM</li>
+                        <li><strong>Sunday:</strong><br>8:00 AM - 9:00 PM</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-envelope"></i> info@freshmart.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 FreshMart Grocery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

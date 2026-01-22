@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Templates Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .templates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .template-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.8s ease;
+            animation-fill-mode: both;
+        }
+
+        .template-card:nth-child(1) { animation-delay: 0.1s; }
+        .template-card:nth-child(2) { animation-delay: 0.2s; }
+        .template-card:nth-child(3) { animation-delay: 0.3s; }
+        .template-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .template-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .card-icon {
+            background: linear-gradient(135deg, var(--color1), var(--color2));
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+        }
+
+        .card-icon i {
+            font-size: 5rem;
+            color: white;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .card-link {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, var(--color1), var(--color2));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .card-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+            opacity: 0.9;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Color schemes for each card */
+        .template-card:nth-child(1) {
+            --color1: #4A90E2;
+            --color2: #2E5C8A;
+        }
+
+        .template-card:nth-child(2) {
+            --color1: #D4AF37;
+            --color2: #C48F4D;
+        }
+
+        .template-card:nth-child(3) {
+            --color1: #00BCD4;
+            --color2: #0097A7;
+        }
+
+        .template-card:nth-child(4) {
+            --color1: #4CAF50;
+            --color2: #388E3C;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+
+            .templates-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-globe"></i> Website Templates</h1>
+            <p>Professional, ready-to-use website templates for various businesses</p>
+        </div>
+
+        <div class="templates-grid">
+            <div class="template-card">
+                <div class="card-icon">
+                    <i class="fas fa-hospital"></i>
+                </div>
+                <div class="card-content">
+                    <h2>Hospital Website</h2>
+                    <p>Professional medical website with departments, doctor profiles, and appointment booking system.</p>
+                    <a href="./hospital-website/index.html" class="card-link">View Template <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <div class="card-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <div class="card-content">
+                    <h2>Beauty Salon</h2>
+                    <p>Elegant salon website with service listings, pricing, gallery, and online booking features.</p>
+                    <a href="./salon-website/index.html" class="card-link">View Template <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <div class="card-icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <div class="card-content">
+                    <h2>Electronics Shop</h2>
+                    <p>Modern e-commerce site for electronics with product catalog, filters, and shopping cart.</p>
+                    <a href="./electronics-shop/index.html" class="card-link">View Template <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="template-card">
+                <div class="card-icon">
+                    <i class="fas fa-shopping-basket"></i>
+                </div>
+                <div class="card-content">
+                    <h2>Grocery Market</h2>
+                    <p>Fresh and clean grocery store template with categories, products, and online ordering system.</p>
+                    <a href="./grocery-market/index.html" class="card-link">View Template <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><i class="fas fa-code"></i> Built with HTML, CSS & JavaScript | 2026</p>
+        </div>
+    </div>
+</body>
+</html>

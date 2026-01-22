@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MediCare Hospital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        <div class="container">
+            <i class="fas fa-ambulance"></i>
+            <span>24/7 Emergency Services: </span>
+            <a href="tel:+1234567890">+1 (234) 567-890</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-hospital"></i>
+                <span>MediCare Hospital</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="appointment-btn">Book Appointment</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in">Contact Us</h1>
+            <p class="fade-in">We're here to help - reach out to us anytime</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-cards fade-in-section">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Phone</h3>
+                <p>General Inquiries</p>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <p>Emergency Line</p>
+                <a href="tel:+1234567899">+1 (234) 567-899</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <p>General Inquiries</p>
+                <a href="mailto:info@medicarehospital.com">info@medicarehospital.com</a>
+                <p>Appointments</p>
+                <a href="mailto:appointments@medicarehospital.com">appointments@medicarehospital.com</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Address</h3>
+                <p>123 Medical Center Blvd<br>Healthcare City, HC 12345<br>United States</p>
+                <a href="#" class="map-link">Get Directions</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Hours</h3>
+                <p><strong>OPD Hours:</strong><br>Mon-Sat: 8:00 AM - 8:00 PM<br>Sunday: 9:00 AM - 5:00 PM</p>
+                <p><strong>Emergency:</strong> 24/7</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="appointment-section fade-in-section">
+        <div class="container">
+            <div class="appointment-form-wrapper">
+                <div class="form-header">
+                    <h2>Book an Appointment</h2>
+                    <p>Fill out the form below and we'll get back to you shortly</p>
+                </div>
+                <form id="appointmentForm" class="appointment-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="department">Select Department *</label>
+                            <select id="department" name="department" required>
+                                <option value="">Choose a department...</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="neurology">Neurology</option>
+                                <option value="orthopedics">Orthopedics</option>
+                                <option value="pediatrics">Pediatrics</option>
+                                <option value="radiology">Radiology</option>
+                                <option value="general">General Medicine</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message / Reason for Visit</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Please describe your symptoms or reason for visit..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the terms and conditions and privacy policy *</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">Submit Appointment Request</button>
+                    
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="map-placeholder">
+                <!-- Replace this with actual Google Maps embed code -->
+                <div class="map-content">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Replace this section with Google Maps embed code</p>
+                    <p class="small-text">123 Medical Center Blvd, Healthcare City, HC 12345</p>
+                    <p class="code-example">&lt;iframe src="your-google-maps-embed-url"&gt;&lt;/iframe&gt;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> How do I book an appointment?</h3>
+                    <p>You can book an appointment by filling out the form above, calling us at +1 (234) 567-890, or visiting our hospital in person.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Do you accept insurance?</h3>
+                    <p>Yes, we accept most major insurance plans. Please contact our billing department for specific information about your coverage.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> What are your emergency services hours?</h3>
+                    <p>Our emergency department is open 24/7, 365 days a year to provide immediate medical care when you need it most.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Can I get a second opinion?</h3>
+                    <p>Absolutely! We encourage patients to seek second opinions. Please contact us to schedule a consultation with one of our specialists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-hospital"></i> MediCare Hospital</h3>
+                    <p>Providing quality healthcare services with compassion and excellence since 1996.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="departments.html">Departments</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Departments</h4>
+                    <ul>
+                        <li><a href="departments.html">Cardiology</a></li>
+                        <li><a href="departments.html">Neurology</a></li>
+                        <li><a href="departments.html">Pediatrics</a></li>
+                        <li><a href="departments.html">Orthopedics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Medical Center Blvd<br>Healthcare City, HC 12345</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-envelope"></i> info@medicarehospital.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
