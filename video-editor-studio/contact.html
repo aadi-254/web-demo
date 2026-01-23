@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch for professional video editing services">
+    <title>Contact - The Last Render</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="The Last Render">
+                    <!-- OR use text logo: -->
+                    <!-- <i class="fas fa-film"></i>
+                    <span>THE LAST <strong>RENDER</strong></span> -->
+                </a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">Get a Quote</a></li>
+                </ul>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content fade-in">
+                <span class="page-subtitle">Get In Touch</span>
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-description">Ready to start your project? Let's discuss how we can bring your vision to life</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                
+                <!-- Contact Info -->
+                <div class="contact-info fade-on-scroll">
+                    <h2>Let's Create Something Amazing</h2>
+                    <p>Whether you need a quick turnaround on a social media video or a full-scale production edit, we're here to help. Fill out the form and we'll get back to you within 24 hours.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>info@thelastrender.com</p>
+                                <p>support@thelastrender.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <p>Mon-Fri 9AM - 6PM PST</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <p>123 Creative Avenue</p>
+                                <p>Los Angeles, CA 90001</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Working Hours</h3>
+                                <p>Monday - Friday: 9AM - 6PM</p>
+                                <p>Weekend: By Appointment</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-contact">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Vimeo"><i class="fab fa-vimeo"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper fade-on-scroll">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Type *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="short-form">Short-Form Videos (Reels/TikTok/Shorts)</option>
+                                <option value="youtube">YouTube Editing</option>
+                                <option value="wedding">Wedding & Event Films</option>
+                                <option value="corporate">Corporate Videos</option>
+                                <option value="music">Music Videos</option>
+                                <option value="commercial">Commercial/Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-500">Under $500</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2500">$1,000 - $2,500</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000+">$5,000+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="deadline">Project Deadline</label>
+                            <input type="date" id="deadline" name="deadline">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, vision, and any specific requirements..." required></textarea>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span>Subscribe to our newsletter for video editing tips and updates</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            Send Message
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <div class="form-message" id="form-message"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header fade-on-scroll">
+                <span class="section-subtitle">Common Questions</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item fade-on-scroll">
+                    <div class="faq-question">
+                        <h3>What's your typical turnaround time?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Turnaround time varies based on project complexity. Short-form videos typically take 3-5 business days, while longer projects like wedding films can take 2-3 weeks. Rush delivery is available for an additional fee.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-on-scroll">
+                    <div class="faq-question">
+                        <h3>How do I send my footage?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept footage via Google Drive, Dropbox, WeTransfer, or any cloud storage platform. We'll provide detailed instructions and a secure upload link after you confirm your project.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-on-scroll">
+                    <div class="faq-question">
+                        <h3>Do you offer revisions?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All packages include 2 rounds of revisions. Additional revisions can be purchased if needed. We work closely with you to ensure the final product meets your vision.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-on-scroll">
+                    <div class="faq-question">
+                        <h3>What video formats do you work with?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We work with all major video formats including MP4, MOV, AVI, MKV, and professional formats like ProRes and RAW footage from various cameras.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-on-scroll">
+                    <div class="faq-question">
+                        <h3>Can you add music and sound effects?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We have access to extensive royalty-free music and sound effects libraries. You can also provide your own music, and we'll ensure proper licensing is handled.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-on-scroll">
+                    <div class="faq-question">
+                        <h3>What are your payment terms?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We require 50% upfront and 50% upon delivery of the final video. We accept all major payment methods including credit cards, PayPal, and bank transfers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="The Last Render">
+                        <!-- OR use text logo: -->
+                        <!-- <i class="fas fa-film"></i>
+                        <span>THE LAST <strong>RENDER</strong></span> -->
+                    </a>
+                    <p>Professional video editing services that transform your raw footage into compelling visual stories.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Short-Form Videos</a></li>
+                        <li><a href="index.html#services">YouTube Editing</a></li>
+                        <li><a href="index.html#services">Wedding Films</a></li>
+                        <li><a href="index.html#services">Corporate Videos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Get In Touch</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> info@thelastrender.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Creative Ave, CA</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Last Render. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
