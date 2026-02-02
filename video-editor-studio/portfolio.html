@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our portfolio of professional video editing projects">
+    <title>Portfolio - Creative Studio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-film"></i>
+                    <span>CREATIVE<strong>STUDIO</strong></span>
+                </a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">Get a Quote</a></li>
+                </ul>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content fade-in">
+                <span class="page-subtitle">Our Work</span>
+                <h1 class="page-title">Portfolio</h1>
+                <p class="page-description">Explore our collection of video editing projects across various genres and styles</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="youtube">YouTube</button>
+                <button class="filter-btn" data-filter="music">Music Video</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-full">
+        <div class="container">
+            <div class="portfolio-grid-full">
+                
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item-full fade-on-scroll" data-category="commercial">
+                    <div class="portfolio-thumbnail-full">
+                        <!-- Replace with actual video thumbnail -->
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=500&fit=crop" alt="Fashion brand commercial">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <span class="portfolio-category-tag">Commercial</span>
+                        <h3>Fashion Brand Launch Campaign</h3>
+                        <p>High-energy commercial for a fashion brand's new collection featuring dynamic cuts and color grading.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item-full fade-on-scroll" data-category="wedding">
+                    <div class="portfolio-thumbnail-full">
+                        <!-- Replace with actual video thumbnail -->
+                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=500&fit=crop" alt="Wedding highlight film">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <span class="portfolio-category-tag">Wedding</span>
+                        <h3>Romantic Wedding Highlight Film</h3>
+                        <p>Cinematic wedding film capturing the most beautiful moments of a couple's special day.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item-full fade-on-scroll" data-category="youtube">
+                    <div class="portfolio-thumbnail-full">
+                        <!-- Replace with actual video thumbnail -->
+                        <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=800&h=500&fit=crop" alt="Travel vlog">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <span class="portfolio-category-tag">YouTube</span>
+                        <h3>Adventure Travel Vlog Series</h3>
+                        <p>Multi-episode travel series with custom intros, transitions, and color grading for YouTube.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item-full fade-on-scroll" data-category="music">
+                    <div class="portfolio-thumbnail-full">
+                        <!-- Replace with actual video thumbnail -->
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&h=500&fit=crop" alt="Music video">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <span class="portfolio-category-tag">Music Video</span>
+                        <h3>Indie Artist Music Video</h3>
+                        <p>Creative music video with artistic transitions and effects synchronized to the beat.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item-full fade-on-scroll" data-category="corporate">
+                    <div class="portfolio-thumbnail-full">
+                        <!-- Replace with actual video thumbnail -->
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&h=500&fit=crop" alt="Corporate promo">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <span class="portfolio-category-tag">Corporate</span>
+                        <h3>Tech Company Promotional Video</h3>
+                        <p>Professional corporate video with motion graphics and branded elements.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item-full fade-on-scroll" data-category="commercial">
+                    <div class="portfolio-thumbnail-full">
+                        <!-- Replace with actual video thumbnail -->
+                        <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=800&h=500&fit=crop" alt="Product showcase">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <span class="portfolio-category-tag">Commercial</span>
+                        <h3>Tech Product Showcase</h3>
+                        <p>Sleek product video highlighting features with smooth transitions and motion graphics.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 7 -->
+                <div class="portfolio-item-full fade-on-scroll" data-category="wedding">
+                    <div class="portfolio-thumbnail-full">
+                        <!-- Replace with actual video thumbnail -->
+                        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&h=500&fit=crop" alt="Wedding ceremony">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <span class="portfolio-category-tag">Wedding</span>
+                        <h3>Beach Wedding Ceremony</h3>
+                        <p>Destination wedding film with drone footage and emotional storytelling.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 8 -->
+                <div class="portfolio-item-full fade-on-scroll" data-category="youtube">
+                    <div class="portfolio-thumbnail-full">
+                        <!-- Replace with actual video thumbnail -->
+                        <img src="https://images.unsplash.com/photo-1526666923127-b2970f64b422?w=800&h=500&fit=crop" alt="YouTube tutorial">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <span class="portfolio-category-tag">YouTube</span>
+                        <h3>Educational Tutorial Series</h3>
+                        <p>Engaging tutorial videos with screen recordings, animations, and clear explanations.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 9 -->
+                <div class="portfolio-item-full fade-on-scroll" data-category="music">
+                    <div class="portfolio-thumbnail-full">
+                        <!-- Replace with actual video thumbnail -->
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=500&fit=crop" alt="Concert video">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <span class="portfolio-category-tag">Music Video</span>
+                        <h3>Live Concert Performance</h3>
+                        <p>Multi-camera concert edit with dynamic cuts synced to the music's energy.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 10 -->
+                <div class="portfolio-item-full fade-on-scroll" data-category="corporate">
+                    <div class="portfolio-thumbnail-full">
+                        <!-- Replace with actual video thumbnail -->
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=500&fit=crop" alt="Training video">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <span class="portfolio-category-tag">Corporate</span>
+                        <h3>Employee Training Video</h3>
+                        <p>Professional training material with lower thirds, graphics, and clear messaging.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 11 -->
+                <div class="portfolio-item-full fade-on-scroll" data-category="commercial">
+                    <div class="portfolio-thumbnail-full">
+                        <!-- Replace with actual video thumbnail -->
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=500&fit=crop" alt="Food commercial">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <span class="portfolio-category-tag">Commercial</span>
+                        <h3>Restaurant Food Promo</h3>
+                        <p>Mouth-watering food commercial with slow-motion shots and appetizing color grading.</p>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 12 -->
+                <div class="portfolio-item-full fade-on-scroll" data-category="youtube">
+                    <div class="portfolio-thumbnail-full">
+                        <!-- Replace with actual video thumbnail -->
+                        <img src="https://images.unsplash.com/photo-1504610926078-a1611febcad3?w=800&h=500&fit=crop" alt="Lifestyle vlog">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-details">
+                        <span class="portfolio-category-tag">YouTube</span>
+                        <h3>Lifestyle & Daily Vlog</h3>
+                        <p>Engaging daily vlog series with jump cuts, music, and personality-driven editing.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="video-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-video">
+                <!-- Replace with actual video embed when clicked -->
+                <!-- Example: <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <p>Video Player Placeholder</p>
+                    <p class="small">Replace with actual video embed (YouTube, Vimeo, or HTML5 video)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content fade-on-scroll">
+                <h2>Like What You See?</h2>
+                <p>Let's collaborate on your next video project. Get in touch today!</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-film"></i>
+                        <span>CREATIVE<strong>STUDIO</strong></span>
+                    </a>
+                    <p>Professional video editing services that transform your raw footage into compelling visual stories.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Short-Form Videos</a></li>
+                        <li><a href="index.html#services">YouTube Editing</a></li>
+                        <li><a href="index.html#services">Wedding Films</a></li>
+                        <li><a href="index.html#services">Corporate Videos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Get In Touch</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> info@creativestudio.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Creative Ave, CA</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Creative Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
